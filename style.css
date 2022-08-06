@@ -1,3 +1,59 @@
+:root {
+    --light-text: whitesmoke;
+    --dark-text: rgb(6, 6, 6);
+    --body-color: rgb(225, 225, 225);
+    --main-color: rgb(34, 142, 204);
+    --accent: rgb(241, 152, 124);
+
+    --hover: rgb(61, 75, 121);
+  }
+
 * {
     font-family: 'Catamaran', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 16px;
+    text-align: left;
+}
+
+button, input {
+    font-family: inherit;
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    background-color: var(--body-color);
+    display: grid;
+    grid-template: 1fr 5fr / 1fr 5fr;
+}
+
+.sidebar {
+    color: var(--light-text);
+    background-color: var(--main-color);
+    padding: 16px;
+    padding-right: 2em;
+    grid-row: 1 / span 2;
+}
+
+.sidebar-options {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 25px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.header{
+    grid-column: 2;
+}
+
+.main-content-container {
+    grid-column: 2;
 }
