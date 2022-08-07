@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
     <link href="style.css" rel="stylesheet">
-    <script src="main.js" defer></script>
+    <!-- <script src="main.js" defer></script> -->
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@200;300;400;500;600;700;800&display=swap');
     </style>
@@ -16,41 +17,70 @@
 <div class="container">
     <div class="sidebar">
         <h1 class="dashboard-header">
-            <div class="dashboard-logo"></div>
+            <img class="dashboard-logo" src="images/dashboard.png" alt="Dashboard Icon">
             Dashboard
         </h1>
         <div class="sidebar-options">
             <ul>
-                <li>Home</li>
-                <li>Profile</li>
-                <li>Messages</li>
-                <li>History</li>
-                <li>Tasks</li>
-                <li>Communities</li>
+                <li>
+                    <img src="images/home.png" alt="Home Icon">
+                    Home
+                </li>
+                <li>
+                    <img src="images/profile.png" alt="Profile Icon">
+                    Profile
+                </li>
+                <li>
+                    <img src="images/messages.png" alt="Messages Icon">
+                    Messages
+                </li>
+                <li>
+                    <img src="images/history.png" alt="History Icon">
+                    History
+                </li>
+                <li>
+                    <img src="images/tasks.png" alt="Tasks Icon">
+                    Tasks
+                </li>
+                <li>
+                    <img src="images/communities.png" alt="Communities Icon">
+                    Communities
+                </li>
             </ul>
             <ul>
-                <li>Settings</li>
-                <li>Support</li>
-                <li>Privacy</li>
+                <li>
+                    <img src="images/settings.png" alt="Settings Icon">
+                    Settings
+                </li>
+                <li>
+                    <img src="images/support.png" alt="Support Icon">
+                    Support
+                </li>
+                <li>
+                    <img src="images/privacy.png" alt="Privacy Icon">
+                    Privacy
+                </li>
             </ul>
         </div>
     </div>
     <div class="header">
         <div class="header-top">
             <div class="searchbar">
-                <fieldset>
-                    <label for="search"> Search </label>
-                    <input type="search" id="search" name="search">
-                </fieldset>
+                <div class="search-icon"> 
+                    <img src="images/search.svg" alt="Search Icon">
+                </div>
+                <form action="" method="get">
+                    <input type="search" id="search" name="search" placeholder="Search">
+                </form>
             </div>
             <div class="user-info">
-                <div class="notif">Bell</div>
-                <div class="profile-pic">Pic</div>
-                Diana Cristea
+                <img class="notif" src="images/bell.svg" alt="Notification Bell">
+                <img class="profile-pic" src="images/penguin.png" alt="Penguin Profile Pic">
+                <div class="username">Diana Cristea</div>
             </div>
         </div>
         <div class="header-main">
-            <div class="profile-pic">Pic</div>
+            <img class="profile-pic" src="images/penguin.png" alt="Penguin Profile Pic">
             <div class="intro-containter">
                 <div class="hello-message">Hi there,</div>
                 <h1 class="username">Diana Cristea (@ddtea)</h1>
@@ -70,54 +100,54 @@
                     <h3 class="card-title">Super Cool Project</h3>
                     <p class="card-text">This project is so cool you wouldn't even believe I was able to code it all by myself!</p>
                     <div class="social-icons">
-                        <div class="star">Star</div>
-                        <div class="watch">Watch</div>
-                        <div class="share">Share</div>
+                        <img class="star" src="images/star.svg" alt="Star" title="Add to Starred">
+                        <img class="watch" src="images/eye.svg" alt="Eye" title="Add to Watch List">
+                        <img class="share" src="images/share.svg" alt="Share" title="Share">
                     </div>
                 </div>
                 <div class="card">
                     <h3 class="card-title">Ad Blocker</h3>
                     <p class="card-text">With this incredibly cool adblocker (that I obviously made all by myself), you'll never get an ad anywhere ever again!</p>
                     <div class="social-icons">
-                        <div class="star">Star</div>
-                        <div class="watch">Watch</div>
-                        <div class="share">Share</div>
+                        <img class="star" src="images/star.svg" alt="Star" title="Add to Starred">
+                        <img class="watch" src="images/eye.svg" alt="Eye" title="Add to Watch List">
+                        <img class="share" src="images/share.svg" alt="Share" title="Share">
                     </div>
                 </div>
                 <div class="card">
                     <h3 class="card-title">Money Maker</h3>
                     <p class="card-text">This project is absolutely worth $5 trillion so if you'd like to be a part of this, please contact me right away.</p>
                     <div class="social-icons">
-                        <div class="star">Star</div>
-                        <div class="watch">Watch</div>
-                        <div class="share">Share</div>
+                        <img class="star" src="images/star.svg" alt="Star" title="Add to Starred">
+                        <img class="watch" src="images/eye.svg" alt="Eye" title="Add to Watch List">
+                        <img class="share" src="images/share.svg" alt="Share" title="Share">
                     </div>
                 </div>
                 <div class="card">
                     <h3 class="card-title">Impossible App</h3>
                     <p class="card-text">So, sometimes people start a project with super high expectations and then you realize you'll never be able to reach those expectations and now I have no idea what to do here.</p>
                     <div class="social-icons">
-                        <div class="star">Star</div>
-                        <div class="watch">Watch</div>
-                        <div class="share">Share</div>
+                        <img class="star" src="images/star.svg" alt="Star" title="Add to Starred">
+                        <img class="watch" src="images/eye.svg" alt="Eye" title="Add to Watch List">
+                        <img class="share" src="images/share.svg" alt="Share" title="Share">
                     </div>
                 </div>
                 <div class="card">
                     <h3 class="card-title">Less Cool Project</h3>
                     <p class="card-text">The sibling of the Super Cool Project but this one is less cool and kinda sucky so we can ignore this one honestly.</p>
                     <div class="social-icons">
-                        <div class="star">Star</div>
-                        <div class="watch">Watch</div>
-                        <div class="share">Share</div>
+                        <img class="star" src="images/star.svg" alt="Star" title="Add to Starred">
+                        <img class="watch" src="images/eye.svg" alt="Eye" title="Add to Watch List">
+                        <img class="share" src="images/share.svg" alt="Share" title="Share">
                     </div>
                 </div>
                 <div class="card">
                     <h3 class="card-title">Easy Peasy App</h3>
-                    <p class="card-text">Now, THIS app was soooo easy to make. I finished this one is 5 minutes and have been using it ever since! Ignore the bugs...</p>
+                    <p class="card-text">Now, THIS app was soooo easy to make because I'm a smarty pants. I finished this one is 5 minutes and have been using it ever since! Ignore the bugs...</p>
                     <div class="social-icons">
-                        <div class="star">Star</div>
-                        <div class="watch">Watch</div>
-                        <div class="share">Share</div>
+                        <img class="star" src="images/star.svg" alt="Star" title="Add to Starred">
+                        <img class="watch" src="images/eye.svg" alt="Eye" title="Add to Watch List">
+                        <img class="share" src="images/share.svg" alt="Share" title="Share">
                     </div>
                 </div>
             </div>
@@ -145,28 +175,28 @@
             <h2 class="trending-title">Trending</h2>
             <div class="trending-card">
                 <div class="profile-trend">
-                    <div class="profile-pic">pic</div>
+                    <img class="profile-pic" src="images/lemons.png" alt="Lemons Profile">
                     <div class="profile-name">
                         <p class="handle">@foresthu</p>
                         <p>Best friend of the Trees</p>
                     </div>
                 </div>
                 <div class="profile-trend">
-                    <div class="profile-pic">pic</div>
+                    <img class="profile-pic" src="images/skateboard.png" alt="Skateboard Profile Pic">
                     <div class="profile-name">
                         <p class="handle">@tracyyylee</p>
                         <p>It's ya girl Crazy Tracy</p>
                     </div>
                 </div>
                 <div class="profile-trend">
-                    <div class="profile-pic">pic</div>
+                    <img class="profile-pic" src="images/football.png" alt="Football Profile Pic">
                     <div class="profile-name">
                         <p class="handle">@kushmpatel</p>
                         <p>USC Trojan for life</p>
                     </div>
                 </div>
                 <div class="profile-trend">
-                    <div class="profile-pic">pic</div>
+                    <img class="profile-pic" src="images/martini.png" alt="Martini Profile Pic">
                     <div class="profile-name">
                         <p class="handle">@ariannatorres</p>
                         <p>Always down to partyyy</p>
